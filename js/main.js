@@ -80,20 +80,18 @@ $(document).ready(function () {
   //go to top buttom
   
     let win = $(window); 
-    if (win.width() >= 1199) { 
-      $('#my-img').enllax();
-      $('#min-projects').enllax();
-
-    }
 
     if (win.width() <= 991) { 
       colReverse();
       };
   
   
-      if (win.width() >= 991) { 
+      if (win.width() >= 1249) { 
+        $('#my-img').enllax();
+        $('#min-projects').enllax();
+        $('#sponsership').enllax();
       let currentProjectHeight = $("#min-projects").height();
-      let doubledProjectHeight = currentProjectHeight*1.8;
+      let doubledProjectHeight = currentProjectHeight*1.3;
       $("#min-projects").height(doubledProjectHeight);
       };
 

@@ -340,6 +340,12 @@ nav{
     padding-top: 10rem;
   }
   
+  #home .title{
+    font-size: 4rem;  
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
   .about-me{
     padding: 15rem 0 20rem 0;
     overflow: hidden;
@@ -385,14 +391,9 @@ nav{
   /* START THE MINI PROJECT BOXES */
   /* START THE MINI PROJECT BOXES */
   .grid {
-    /* position: relative;
-    clear: both;
-    margin: 0 auto;
-    padding: 1em 0 4em;
-    max-width: 1000px; */
     list-style: none;
     text-align: center;
-    margin: 5rem 0;
+    /* margin: 5rem 0; */
   }
   
   /* Common style */
@@ -404,7 +405,6 @@ nav{
     min-width: 320px;
     max-width: 480px;
     max-height: 360px;
-    /* width: 48%; */
     height: auto;
     background: #3085a3;
     text-align: center;
@@ -453,7 +453,7 @@ nav{
   }
   
   .grid figure h2 {
-    word-spacing: -0.15em;
+    word-spacing: .2rem;
     font-weight: 300;
   }
   
@@ -480,6 +480,7 @@ nav{
     background-color: var(--dark-purple);
     background-image: linear-gradient(315deg, var(--dark-purple) 15%, var(--light-blue) 85%);
     box-shadow: 15px 5px 50px 0 var(--dark-purple) , -15px -5px 50px 0 var(--light-blue);  
+    border-radius: 2rem;
   }
   
   figure.effect-goliath img,
@@ -497,7 +498,7 @@ nav{
   figure.effect-goliath p {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     padding: 1.5rem;
   }
   
@@ -512,13 +513,13 @@ nav{
   }
   
   figure.effect-goliath:hover img {
-    -webkit-transform: translate3d(0,-80px,0);
-    transform: translate3d(0,-80px,0);
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-100px,0);
   }
   
   figure.effect-goliath:hover h2 {
-    -webkit-transform: translate3d(0,-100px,0);
-    transform: translate3d(0,-100px,0);
+    -webkit-transform: translate3d(0,-120px,0);
+    transform: translate3d(0,-120px,0);
   }
   
   figure.effect-goliath:hover p {
@@ -527,11 +528,248 @@ nav{
     transform: translate3d(0,0,0);
   }
   
+
+/* PRICING PLANS */
+/* PRICING PLANS */
+
+#sponsership .frame{
+  background-color: var(--dark-purple);
+  background-image: linear-gradient(315deg, var(--dark-purple) 15%, var(--light-blue) 85%);
+  box-shadow: 15px 5px 50px 0 var(--dark-purple) , -15px -5px 50px 0 var(--light-blue);
+  border-radius: 3rem;
+  padding: 0.5rem;
+}
+
+
+#sponsership .wrapper .table{
+  background: #fff;
+  padding: 30px 30px;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+
+#sponsership .table .price-section{
+ display: flex;
+ justify-content: center;
+}
+
+#sponsership .basic .price-section .price{
+  padding: 0.5rem;
+  color: var(--light-blue);
+  font-size: 3rem;
+}
+
+#sponsership .Premium .price-section .price{
+  padding: 0.5rem;
+  color: var(--dark-purple);
+  font-size: 3rem;
+}
+
+#sponsership .price-section .currency{
+  color: var(--dark-navey);
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+
+
+
+#sponsership .price-section .price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  color: #fff;
+  line-height: 117px;
+  text-align: center;
+  position: relative;
+}
+
+#sponsership .price-area .inner-area .text{
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: -10px;
+  left: 17px;
+}
+
+#sponsership .price-area .inner-area .price{
+  font-size: 55px;
+  font-weight: 500;
+}
+
+#sponsership .table .package-name{
+  width: 100%;
+  height: 2px;
+  background: var(--light-blue);
+  margin: 35px 0;
+  position: relative;
+}
+
+#sponsership .table .package-name::before{
+  position: absolute;
+  content: "Basic";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  font-size: 25px;
+  padding: 0 10px;
+  font-weight: bolder;
+}
+
+#sponsership .table .features li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#sponsership .features li .list-name{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#sponsership .features li .icon{
+  font-size: 15px;
+}
+
+#sponsership .features li .icon.check{
+  color: #2db94d;
+    padding-left: 1rem;
+}
+
+#sponsership .features li .icon.cross{
+  color: #cd3241;
+}
+
+#sponsership .table .btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+
+#sponsership .basic .price-area,
+#sponsership .basic .inner-area{
+  background: var(--light-blue);
+}
+
+#sponsership .Premium .price-area,
+#sponsership .Premium .inner-area{
+  background: var(--dark-purple);
+}
+
+#sponsership .Premium .btn button{
+  background: #fff;
+  color:var(--dark-purple);
+  border: 2px solidvar(--dark-purple);
+}
+
+#sponsership .basic .package-name{
+  background: var(--light-blue);
+}
+
+#sponsership .Premium .package-name{
+  background: var(--dark-purple);
+}
+
+#sponsership .basic .package-name::before{
+  content: "Basic";
+}
+
+#sponsership .Premium .package-name::before{
+  content: "Premium";
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+  background: var(--light-blue);
+}
+
+#sponsership .Premium ::selection,
+#sponsership .Premium .price-area,
+#sponsership .Premium .inner-area{
+  background: var(--dark-purple);
+}
+
+
+/* PRICING PLANS */
+/* PRICING PLANS */
+
+
+
   /* END THE MINI PROJECT BOXES */
   /* END THE MINI PROJECT BOXES */
   /* END THE MINI PROJECT BOXES */
   
+/*  GALLARY */
+/*  GALLARY */
+/*  GALLARY */
+/*  GALLARY */
   
+.gallary{
+  padding-top: 10rem;
+}
+
+.gallary .img-container{
+  background-color: var(--dark-purple);
+  background-image: linear-gradient(315deg, var(--dark-purple) 15%, var(--light-blue) 85%);
+  box-shadow: 15px 5px 50px 0 var(--dark-purple) , -15px -5px 50px 0 var(--light-blue);  
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.gallary .img-container img{
+  width: 100%;
+}
+
+.video-section{
+  padding-top: 10rem;
+}
+/*  GALLARY */
+/*  GALLARY */
+/*  GALLARY */
+/*  GALLARY */
+
+
+
+
+
+
+
+
+
+
+
+  #sponsership{
+    margin :3rem 0;
+  }
+  #sponsership .sp-list{
+    padding: 1rem;
+  }
+  #sponsership .sp-list li{
+    list-style: none;
+    color: #ddd;
+    font-size: 2rem;
+  }
+  #sponsership .sp-list .offer-value{
+    font-size: 3rem;
+    color: var(--dark-purple);
+    /* margin: 0 2rem; */
+    padding-right: .5rem;
+  }
+  #sponsership .sp-list .currency{
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+    color: var(--light-blue);
+  }
   
   .contact{
     background-color:var(--dark-purple) ;
@@ -675,8 +913,15 @@ nav{
   .centerlized{
     display: flex;
     justify-content: center;
-  }
+    margin: 6rem 0;
 
+  }
+  .jana{
+    color: var(--light-blue);
+  }
+  .margin-b{
+    margin-bottom: 5rem;
+  }
   
   /*   RESPONSIVE SCREENS FOT MOBILE PHONES AND TABLETS  */
   /*   RESPONSIVE SCREENS FOT MOBILE PHONES AND TABLETS  */
@@ -796,15 +1041,15 @@ nav{
   
   
   
-  
-  
-  
-  
   /* START CUSTOM  SCREENS  */
   @media (max-width:1249px){
     
     .NB  nav{
       display: none;
+    }
+
+    .centerlized{
+      margin: 2rem 0;  
     }
     
   }
