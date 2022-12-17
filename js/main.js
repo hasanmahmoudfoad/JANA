@@ -17,12 +17,8 @@ $(document).ready(function () {
   /* pre loader*/
   
   
-  
-  
   /*scrolling events */
   /*scrolling events */
-
-
 
   /* Pc nav */
   $(' nav li a').click(function(){
@@ -100,7 +96,77 @@ $(document).ready(function () {
         $(".nav-toggle").click();
       });
   
+
+
+      // THEME CHANGE
+      // THEME CHANGE
+      // THEME CHANGE
+      // THEME CHANGE
+      
+      let theme = document.getElementById("toggleTheme");
+
+      $(".toggleTheme").on("click", function(){
+
+        if (theme.innerHTML === "Light") {
+          theme.innerHTML = "Dark";
+
+          $(":root").css({"--dark-purple": "#1ccf50", "--light-blue": "#09b3b4" ,"--dark-navey":"#fff"});            
+          $("p, a, li, h1").addClass("color-dark");            
+          $(".icon-info .icon").css({"color":"#101630"});
+            
+          } else {
+            theme.innerHTML = "Light";
+
+            $(":root").css({"--dark-purple": "#463fc2", "--light-blue": "#4fb7dc" ,"--dark-navey":"#101630"});
+            $(" p, a, li, h1").removeClass("color-dark");            
+            $(".icon-info .icon").css({"color":"#eee"});        
+      
+
+          };
+
+
+      });
   
+
+
+
+
+
+
+
+
+
+
+// Get the text toggleTheme that we're going to track
+let toggleTheme = document.getElementById("toggleTheme");
+// See if we have an autosave value
+// (this will only happen if the page is accidentally refreshed)
+if (sessionStorage.getItem("autosave")) {
+  // Restore the contents of the text toggleTheme
+  toggleTheme.value = sessionStorage.getItem("autosave");
+}
+
+// Listen for changes in the text toggleTheme
+toggleTheme.addEventListener("click", () => {
+  // And save the results into the session storage object
+  sessionStorage.setItem("autosave", toggleTheme.value);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
