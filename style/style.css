@@ -821,7 +821,12 @@ figure.effect-goliath:hover p {
 
 
 #sponsership .sub-list-name {
-  padding: 2rem;
+  padding: .5rem 1rem;
+  margin-bottom: 0;
+}
+
+#sponsership .sub-list-name li{
+  margin-bottom: 0 !important;
 }
 
 /* PRICING PLANS */

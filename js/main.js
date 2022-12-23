@@ -130,7 +130,7 @@ $(document).ready(function () {
 
 
 // ----------------------------------------
-  (() => {
+ /* (() => {
     const theme = window.localStorage.getItem("theme");
     if (theme == "Light") {
       document.querySelector("html").style = "--dark-purple:#1ccf50; --light-blue:#09b3b4; --dark-navey:#fff;"
@@ -151,7 +151,7 @@ $(document).ready(function () {
     }
     //console.log(current);
     }
-
+*/
 // ----------------------------------------
 
 
