@@ -11,6 +11,7 @@ function colReverse() {
 
 
 // START Coverage & review projects.
+let checkboxProjectsValuePk = "NO"; 
 function toggleCheckboxProjectsFunction(){
   let checkBoxTog = $(this); //checkbox itself
   let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
@@ -30,13 +31,13 @@ function numberOfProjectsPkFunction() {
     return numberOfProjects;
   }
 }
-let checkboxProjectsValuePk; 
 $("#projectsPk").on( "click", toggleCheckboxProjectsFunction);
 // END Coverage & review projects.
 
 
 
 // START Interviews.
+let checkboxInterviewsValuePk = "NO"; 
 function toggleCheckInterviewsPkFunction(){
   let checkBoxTog = $(this); //checkbox itself
   let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
@@ -56,14 +57,13 @@ function numberOfInterviewsPkFunction() {
     return numberOfInterviews;
   }
 }
-let checkboxInterviewsValuePk; 
 $("#interviewsPk").on( "click", toggleCheckInterviewsPkFunction);
 // END Interviews.
 
 
 
-
 // START Events.
+let checkboxEventsValuePk = "NO"; 
 function toggleCheckEventsPkFunction(){
   let checkBoxTog = $(this); //checkbox itself
   let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
@@ -83,9 +83,132 @@ function numberOfEventsPkFunction() {
     return numberOfEvents;
   }
 }
-let checkboxEventsValuePk; 
 $("#eventsPk").on( "click", toggleCheckEventsPkFunction);
 // END Events.
+
+
+
+// START Segement reportages.
+let checkboxReportageValuePk = "NO"; 
+function toggleCheckReportagePkFunction(){
+  let checkBoxTog = $(this); //checkbox itself
+  let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
+  if (checkBoxTog.is(":checked")) {
+    selectInputOption.stop(true, false).slideDown(500);
+    checkboxReportageValuePk = "YES";
+  } else {
+    selectInputOption.stop(true, false).slideUp(500);
+    checkboxReportageValuePk = "NO";
+  }
+};
+function numberOfReportagePkFunction() {
+  let numberOfReportage = document.getElementById("numberOfReportage").value;
+  if (checkboxReportageValuePk == "NO") {
+    return "-----";
+  } else {
+    return numberOfReportage;
+  }
+}
+$("#reportagePk").on( "click", toggleCheckReportagePkFunction);
+// END  Segement reportages.
+
+
+
+// START News.
+let checkboxNewsValuePk = "NO"; 
+function toggleCheckNewsPkFunction(){
+  let checkBoxTog = $(this); //checkbox itself
+  let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
+  if (checkBoxTog.is(":checked")) {
+    selectInputOption.stop(true, false).slideDown(500);
+    checkboxNewsValuePk = "YES";
+  } else {
+    selectInputOption.stop(true, false).slideUp(500);
+    checkboxNewsValuePk = "NO";
+  }
+};
+function numberOfNewsPkFunction() {
+  let numberOfNews = document.getElementById("numberOfNews").value;
+  if (checkboxNewsValuePk == "NO") {
+    return "-----";
+  } else {
+    return numberOfNews;
+  }
+}
+$("#newsPk").on( "click", toggleCheckNewsPkFunction);
+// END  News.
+
+
+
+// START Company or project logo inside the studio.
+let checkboxLogoInsideStudioValuePk = "NO"; 
+function toggleCheckInsideStudioPkFunction(){
+  let checkBoxTog = $(this); //checkbox itself
+  let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
+  if (checkBoxTog.is(":checked")) {
+    selectInputOption.stop(true, false).slideDown(500);
+    checkboxLogoInsideStudioValuePk = "YES";
+  } else {
+    selectInputOption.stop(true, false).slideUp(500);
+    checkboxLogoInsideStudioValuePk = "NO";
+  }
+};
+$("#insideStudioPk").on( "click", toggleCheckInsideStudioPkFunction);
+// END Company or project logo inside the studio.
+
+
+
+// START Company or project logo outdoor campaign the studio.
+let checkboxLogoOutdoorStudioValuePk = "NO"; 
+function toggleCheckOutdoorStudioPkFunction(){
+  let checkBoxTog = $(this); //checkbox itself
+  let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
+  if (checkBoxTog.is(":checked")) {
+    selectInputOption.stop(true, false).slideDown(500);
+    checkboxLogoOutdoorStudioValuePk = "YES";
+  } else {
+    selectInputOption.stop(true, false).slideUp(500);
+    checkboxLogoOutdoorStudioValuePk = "NO";
+  }
+};
+$("#outdoorStudioPk").on( "click", toggleCheckOutdoorStudioPkFunction);
+// END Company or project logo outdoor campaign the studio.
+
+
+
+// START Sponsorship masaa masr events.
+let checkboxSponsorshipEventsValuePk = "NO"; 
+function toggleCheckSponsorshipEventsPkFunction(){
+  let checkBoxTog = $(this); //checkbox itself
+  let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
+  if (checkBoxTog.is(":checked")) {
+    selectInputOption.stop(true, false).slideDown(500);
+    checkboxSponsorshipEventsValuePk = "YES";
+  } else {
+    selectInputOption.stop(true, false).slideUp(500);
+    checkboxSponsorshipEventsValuePk = "NO";
+  }
+};
+$("#sponsorshipEventsPk").on( "click", toggleCheckSponsorshipEventsPkFunction);
+// END Sponsorship masaa masr events.
+
+
+
+// START Sponsorship Masaa Masr social media.
+let checkboxSponsorshipSocialMediasValuePk = "NO"; 
+function toggleCheckSponsorshipSocialMediaPkFunction(){
+  let checkBoxTog = $(this); //checkbox itself
+  let selectInputOption = checkBoxTog.closest(".custom-package").find(".hidden-options");
+  if (checkBoxTog.is(":checked")) {
+    selectInputOption.stop(true, false).slideDown(500);
+    checkboxSponsorshipSocialMediasValuePk = "YES";
+  } else {
+    selectInputOption.stop(true, false).slideUp(500);
+    checkboxSponsorshipSocialMediasValuePk = "NO";
+  }
+};
+$("#sponsorshipSocialMediaPk").on( "click", toggleCheckSponsorshipSocialMediaPkFunction);
+// END Sponsorship Masaa Masr social media.
 
 
 
@@ -98,30 +221,57 @@ function goToWhatsapp() {
   let logosPk = document.getElementById("logosPk").value;
   let spotsPk = document.getElementById("spotsPk").value;
   let logoScreenPk = document.getElementById("logoScreenPk").value;
+
   let projectsPk = checkboxProjectsValuePk;
-  let numberOfProjects = numberOfProjectsPkFunction();
+    let numberOfProjects = numberOfProjectsPkFunction();
+
   let interviewsPk = checkboxInterviewsValuePk;
-  let numberOfInterviews = numberOfInterviewsPkFunction();
+    let numberOfInterviews = numberOfInterviewsPkFunction();
+
   let eventsPk = checkboxEventsValuePk;
-  let numberOfEvents = numberOfEventsPkFunction();
+    let numberOfEvents = numberOfEventsPkFunction();
+
+  let reportagePk = checkboxReportageValuePk;
+    let numberOfReportage = numberOfReportagePkFunction();
+
+
+  let newsPk = checkboxReportageValuePk;
+    let numberOfNews = numberOfNewsPkFunction();
+
+  let logoInsideStudioPk = checkboxLogoInsideStudioValuePk;
+  let logoOutdoorStudioPk = checkboxLogoOutdoorStudioValuePk;
+  let SponsorshipEventsPk = checkboxSponsorshipEventsValuePk;
+  let sponsorshipSocialMedia = checkboxSponsorshipSocialMediasValuePk;
 
 
 
-  let url = `https://wa.me/+201153380655?text= %0a%0a
-                Name:%20  ${timePk} %0a%0a
-                Phone :%20  ${logosPk} %0a%0a
-                Email :%20   ${spotsPk} %0a%0a
-                Service :%20  ${logoScreenPk} %0a%0a
-                Coverage and review projects :%20 ${projectsPk} %0a
-                %20 %20 %20 Number of projects :%20 ${numberOfProjects} %0a%0a
-                interviews :%20  ${interviewsPk} %0a
-                %20 %20 %20 Number of interviews :%20 ${numberOfInterviews} %0a%0a
-                Coverage events :%20  ${eventsPk} %0a
-                %20 %20 %20 Number of coverage events :%20 ${numberOfEvents} %0a%0a
-                `;
+
+  let url = `https://wa.me/+201153380655?text=
+  Name:%20  ${timePk}%0a
+  Phone :%20  ${logosPk}%0a
+  Email :%20   ${spotsPk}%0a
+  Service :%20  ${logoScreenPk}%0a%0a
+  Coverage and review projects :%20 ${projectsPk}%0a
+  %20 %20 %20 Number of projects :%20 ${numberOfProjects}%0a%0a
+  interviews :%20  ${interviewsPk}%0a
+  %20 %20 %20 Number of interviews :%20 ${numberOfInterviews}%0a%0a
+  Coverage events :%20  ${eventsPk} %0a
+  %20 %20 %20 Number of coverage events :%20 ${numberOfEvents}%0a%0a
+  Segment Reportage :%20  ${reportagePk} %0a
+  %20 %20 %20 Number of segment reportage :%20 ${numberOfReportage}%0a%0a
+  News :%20  ${newsPk}%0a
+  %20 %20 %20 Number of News :%20 ${numberOfNews}%0a%0a
+  company or project logo inside the studio :%20  ${logoInsideStudioPk}%0a
+  company or project logo outdoor campaign the studio :%20  ${logoOutdoorStudioPk}%0a
+  Sponsorship Masaa Masr events :%20  ${SponsorshipEventsPk}%0a
+  Sponsorship Masaa Masr social media :%20  ${sponsorshipSocialMedia}%0a
+  `;
 
   window.open(url, '_blank').focus();
 }
+
+ 
+let totalFee = $("#totalFee");
 
 
 
