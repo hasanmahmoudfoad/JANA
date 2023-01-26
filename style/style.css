@@ -615,11 +615,11 @@ figure.effect-goliath:hover p {
 
 /* PRICING PLANS */
 /* PRICING PLANS */
-#sponsership .container-adjust {
+#sponsorship .container-adjust {
   padding: 5rem;
 }
 
-#sponsership .frame {
+#sponsorship .frame {
   background-color: var(--dark-purple);
   background-image: linear-gradient(315deg, var(--dark-purple) 15%, var(--light-blue) 85%);
   box-shadow: 15px 5px 50px 0 var(--dark-purple), -15px -5px 50px 0 var(--light-blue);
@@ -628,7 +628,7 @@ figure.effect-goliath:hover p {
 }
 
 
-#sponsership .wrapper .table {
+#sponsorship .wrapper .table {
   background: #fff;
   padding: 30px 30px;
   border-radius: 3rem;
@@ -637,32 +637,32 @@ figure.effect-goliath:hover p {
 }
 
 
-#sponsership .table .price-section {
+#sponsorship .table .price-section {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
 }
 
-#sponsership .basic .price-section .price {
+#sponsorship .basic .price-section .price {
   padding: 0.5rem;
   color: var(--light-green);
   font-size: 3rem;
 }
 
-#sponsership .standard .price-section .price {
+#sponsorship .standard .price-section .price {
   padding: 0.5rem;
   color: var(--light-blue);
   font-size: 3rem;
 }
 
-#sponsership .Premium .price-section .price {
+#sponsorship .Premium .price-section .price {
   padding: 0.5rem;
   color: var(--dark-purple);
   font-size: 3rem;
 }
 
 
-#sponsership .price-section .currency {
+#sponsorship .price-section .currency {
   color: var(--dark-navey);
   width: 35px;
   display: flex;
@@ -674,7 +674,7 @@ figure.effect-goliath:hover p {
 
 
 
-#sponsership .price-section .price-area .inner-area {
+#sponsorship .price-section .price-area .inner-area {
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -685,7 +685,7 @@ figure.effect-goliath:hover p {
   position: relative;
 }
 
-#sponsership .price-area .inner-area .text {
+#sponsorship .price-area .inner-area .text {
   font-size: 25px;
   font-weight: 400;
   position: absolute;
@@ -693,13 +693,13 @@ figure.effect-goliath:hover p {
   left: 17px;
 }
 
-#sponsership .price-area .inner-area .price {
+#sponsorship .price-area .inner-area .price {
   font-size: 55px;
   font-weight: 500;
 }
 
 
-#sponsership .table .package-name {
+#sponsorship .table .package-name {
   width: 100%;
   height: 2px;
   background: var(--light-blue);
@@ -707,7 +707,7 @@ figure.effect-goliath:hover p {
   position: relative;
 }
 
-#sponsership .table .package-name::before {
+#sponsorship .table .package-name::before {
   position: absolute;
   content: "Basic";
   top: 50%;
@@ -719,80 +719,80 @@ figure.effect-goliath:hover p {
   font-weight: bolder;
 }
 
-#sponsership .table .features li {
+#sponsorship .table .features li {
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
-#sponsership .features li .list-name {
+#sponsorship .features li .list-name {
   font-size: 1rem;
   font-weight: 400;
 }
 
-#sponsership .features li .icon {
+#sponsorship .features li .icon {
   font-size: 15px;
 }
 
-#sponsership .features li .icon.check {
+#sponsorship .features li .icon.check {
   color: #2db94d;
   padding-left: 1rem;
   display: flex;
   align-items: center;
 }
 
-#sponsership .features li .icon.cross {
+#sponsorship .features li .icon.cross {
   color: #cd3241;
   display: flex;
   align-items: center;
 }
 
-#sponsership .table .btn {
+#sponsorship .table .btn {
   display: flex;
   justify-content: center;
   margin-top: 35px;
 }
 
 
-#sponsership .basic .price-area,
-#sponsership .basic .inner-area {
+#sponsorship .basic .price-area,
+#sponsorship .basic .inner-area {
   background: var(--light-green);
 }
 
 
-#sponsership .standard .price-area,
-#sponsership .standard .inner-area {
+#sponsorship .standard .price-area,
+#sponsorship .standard .inner-area {
   background: var(--light-blue);
 }
 
-#sponsership .Premium .price-area,
-#sponsership .Premium .inner-area {
+#sponsorship .Premium .price-area,
+#sponsorship .Premium .inner-area {
   background: var(--dark-purple);
 }
 
-#sponsership .basic .plan-color {
+#sponsorship .basic .plan-color {
   color: var(--light-green);
 }
 
-#sponsership .standard .plan-color {
+#sponsorship .standard .plan-color {
   color: var(--light-blue);
 }
 
-#sponsership .Premium .plan-color {
+#sponsorship .Premium .plan-color {
   color: var(--dark-purple);
 }
 
-#sponsership .basic .package-name {
+#sponsorship .basic .package-name {
   background: var(--light-green);
 }
 
 
-#sponsership .standard .package-name {
+#sponsorship .standard .package-name {
   background: var(--light-blue);
 }
 
-#sponsership .Premium .package-name {
+#sponsorship .Premium .package-name {
   background: var(--dark-purple);
 }
 
@@ -803,16 +803,16 @@ figure.effect-goliath:hover p {
 
 
 
-#sponsership .basic .package-name::before {
+#sponsorship .basic .package-name::before {
   content: "Basic";
 }
 
 
-#sponsership .standard .package-name::before {
+#sponsorship .standard .package-name::before {
   content: "Standard";
 }
 
-#sponsership .Premium .package-name::before {
+#sponsorship .Premium .package-name::before {
   content: "Premium";
 }
 
@@ -829,21 +829,21 @@ figure.effect-goliath:hover p {
   background: var(--light-blue);
 }
 
-#sponsership .Premium ::selection,
-#sponsership .Premium .price-area,
-#sponsership .Premium .inner-area {
+#sponsorship .Premium ::selection,
+#sponsorship .Premium .price-area,
+#sponsorship .Premium .inner-area {
   background: var(--dark-purple);
 }
 
 
 
 
-#sponsership .sub-list-name {
+#sponsorship .sub-list-name {
   padding: .5rem 1rem;
   margin-bottom: 0;
 }
 
-#sponsership .sub-list-name li{
+#sponsorship .sub-list-name li{
   margin-bottom: 0 !important;
 }
 
@@ -923,24 +923,24 @@ figure.effect-goliath:hover p {
   transition-duration: .25s;
 }
 
-#sponsership .sp-list {
+#sponsorship .sp-list {
   padding: 1rem;
 }
 
-#sponsership .sp-list li {
+#sponsorship .sp-list li {
   list-style: none;
   color: #ddd;
   font-size: 2rem;
 }
 
-#sponsership .sp-list .offer-value {
+#sponsorship .sp-list .offer-value {
   font-size: 3rem;
   color: var(--dark-purple);
   /* margin: 0 2rem; */
   padding-right: .5rem;
 }
 
-#sponsership .sp-list .currency {
+#sponsorship .sp-list .currency {
   font-size: 1.5rem;
   margin-right: 2.5rem;
   color: var(--light-blue);
@@ -949,45 +949,45 @@ figure.effect-goliath:hover p {
 /* start the custom pricing package */
 /* start the custom pricing package */
 /* start the custom pricing package */
-#sponsership .custom-package{
+#sponsorship .custom-package{
   width: 100%;
   margin-bottom: 2rem;
 }
 
-#sponsership .custom-package label{
+#sponsorship .custom-package label{
   font-size: 1.2rem;
 }
 
-#sponsership .custom-package input[type="text"], input[type="number"], input[type="email"]{
+#sponsorship .custom-package input[type="text"], input[type="number"], input[type="email"]{
   width: 100%;
   max-width: 350px;
   font-size: 1.1rem;
 
 }
 
-#sponsership .custom-package .num-picker{
+#sponsorship .custom-package .num-picker{
   width: 100%;
   max-width: 250px;
   font-size: 1.1rem;
 
 }
 
-#sponsership .custom-package .projects-num-picker .option{
+#sponsorship .custom-package .projects-num-picker .option{
 font-size: 1.1rem;
 }
 
 
-#sponsership .custom-package .cpk-info{
+#sponsorship .custom-package .cpk-info{
   color: #ddd;
   font-size: 1.2rem;
 }
 
-#sponsership .custom-package .dropdown-list{
+#sponsorship .custom-package .dropdown-list{
   color: #ddd;
   font-size: 1.2rem;
 }
 
-#sponsership .custom-package .dropdown-list {
+#sponsorship .custom-package .dropdown-list {
   display: none;
   margin-left: 4.5rem;
 }
@@ -1323,30 +1323,30 @@ p, label {
     font-size: 1rem;
   }
 
-  #sponsership .basic .price-section .price {
+  #sponsorship .basic .price-section .price {
     padding: 2rem 0.5rem;
     font-size: 2.5rem;
   }
 
-  #sponsership .standard .price-section .price {
+  #sponsorship .standard .price-section .price {
     padding: 2rem 0.5rem;
     font-size: 2.5rem;
   }
 
-  #sponsership .Premium .price-section .price {
+  #sponsorship .Premium .price-section .price {
     padding: 2rem 0.5rem;
     font-size: 2.5rem;
   }
 
-  #sponsership .sub-list-name {
+  #sponsorship .sub-list-name {
     padding: 1rem;
   }
 
-  #sponsership .features li .list-name {
+  #sponsorship .features li .list-name {
     font-size: 1rem;
   }
 
-  #sponsership .container-adjust {
+  #sponsorship .container-adjust {
     padding: .5rem;
   }
 }
@@ -1433,27 +1433,27 @@ p, label {
     padding: 5rem 0;
   }
 
-  #sponsership .basic .price-section .price {
+  #sponsorship .basic .price-section .price {
     padding: 2rem 0.5rem;
     font-size: 2.5rem;
   }
 
-  #sponsership .standard .price-section .price {
+  #sponsorship .standard .price-section .price {
     padding: 2rem 0.5rem;
     font-size: 2.5rem;
   }
 
-  #sponsership .Premium .price-section .price {
+  #sponsorship .Premium .price-section .price {
     padding: 2rem 0.5rem;
     font-size: 2.5rem;
   }
 
 
-  #sponsership .sub-list-name {
+  #sponsorship .sub-list-name {
     padding: 1rem;
   }
 
-  #sponsership .features li .list-name {
+  #sponsorship .features li .list-name {
     font-size: 1rem;
   }
 
@@ -1475,15 +1475,15 @@ p, label {
     margin: 2rem 0;
   }
 
-  #sponsership .basic .price-section .price {
+  #sponsorship .basic .price-section .price {
     font-size: 2rem;
   }
 
-  #sponsership .standard .price-section .price {
+  #sponsorship .standard .price-section .price {
     font-size: 2rem;
   }
 
-  #sponsership .Premium .price-section .price {
+  #sponsorship .Premium .price-section .price {
     font-size: 2rem;
   }
 
