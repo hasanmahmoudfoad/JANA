@@ -346,10 +346,10 @@ $(document).ready(function () {
     
     
     // START go to top button
-    if ($(this).scrollTop() > 650) {
-      $('#go-top').fadeIn();
+    if ($(window).scrollTop() > 650) {
+      $('#go-top').show();
     } else {
-      $('#go-top').fadeOut();
+      $('#go-top').hide();
     }
     //END go to top button
     
@@ -379,12 +379,7 @@ $(document).ready(function () {
   };
   
   if (win.width() >= 1249) {
-    $('#my-img').enllax();
-    $('#min-projects').enllax();
-    $('#sponsorship').enllax();
-    let currentProjectHeight = $("#min-projects").height();
-    let doubledProjectHeight = currentProjectHeight * 1.3;
-    $("#min-projects").height(doubledProjectHeight);
+    $(window).enllax();
   };
   // END adjustments on the window object
   

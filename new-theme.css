@@ -43,8 +43,81 @@
   src: url(../JANA/fonts/Poppins-Black.ttf);
 }
 
+.nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+  background: #6fa3c1;
+}
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 3rem;
+  position: fixed;
+  top: 3rem;
+  width: 3.6rem;
+  z-index: 2;
+}
+.navbar {
+  background-color: var(--light-blue);
+  background-image: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  height: 100%;
+  left: -20rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 20rem;
+  z-index: 1;
+  max-height: 45rem;
+  border-radius: 10rem;
+  border-top-left-radius: 0;
+  border: 2px solid #333;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+.navbar{
+
+}
 
 
+.navbar .diff{
+
+}
+
+.navbar .diff span{
+
+}
+
+.navbar .diff span .nav-icon {
+
+}
+
+.navbar .diff .nav-icon a{
+
+}
+
+
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  background: #333;
+}
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #333;
+}
 nav {
   background: #fff;
   box-shadow: 0px 1px 15px #eee;
@@ -133,18 +206,57 @@ nav li:hover {
   font-weight: bold;
   font-size: 3.2rem;
   color: var(--light-blue);
+  
+}
 
+#home .my-img-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+#home .frame {
+  position: relative;
+  background-image: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+#home .me-border {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+#home .my-img-container img {
+  width: 100%;
+  background: inherit;
+  display: block;
+  border-radius: 0rem;
+}
+
+#home .m-bg{
+
+}
+
+.about-me {
+    padding: 0rem 0 20rem 0;
+    overflow: hidden;
 }
 
 .about-me p {
-  font-size: 1.3rem;
-  font-weight: 600;
-  line-height: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: unset;
   color: #333;
-  width: 90%;
+  width: 100%;
+  font-family: 'Poppins';
 }
 
-
+.about-me .my-img-container img{
+  width: 100%;
+  background: inherit;
+  display: block;
+  border-radius: 0rem;
+}
 
 .contact .info .icon-info a {
   color: #333;
@@ -162,10 +274,104 @@ nav li:hover {
   color: #333;
   font-size: 1.5rem;
 }
+.new-title {
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+}
+.new-title h2{
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#footer {
+  margin-top: 2rem;
+}
+
+#footer .icons-container{
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+#footer .icon-cont{
+  padding: 0.5rem;
+  border: 2px solid;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+}
+
+#footer .icon-cont a{
+  font-size: 2.5rem;
+  color: #333;
+  border: 2px solid;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 80px;
+  transition-duration: .25s;
+}
+
+#footer .icon-cont a:hover{
+background: var(--dark-purple);
+}
+
+#footer .bord{
+  border-right: 1px solid #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CUSTOM STYELS FOR THE NEW THEME */
 /* CUSTOM STYELS FOR THE NEW THEME */
 /* CUSTOM STYELS FOR THE NEW THEME */
 
+.unique{
+  
+}
+.tl-left{
+  width: 100px;
+  height: 3px;
+  vertical-align: super;
+  background: #333;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+
+.tl-right{
+  width: 100px;
+  height: 3px;
+  vertical-align: super;
+  background: #333;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
 
 .font-pristina{
   font-family: pristina;
@@ -176,9 +382,6 @@ nav li:hover {
 }
 
 
-.unique{
-  
-}
 
 nav li .active {
   color: var(--light-blue) !important;
@@ -200,6 +403,34 @@ p, h1, h2, h3, label {
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
+
+#go-top {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 15px;
+  bottom: 0px;
+  z-index: 15;
+  display: none;
+}
+
+
+#go-top img{
+width: 100%;
+}
+
+#go-top .go-to-top{
+  font-size: 2rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+transition-duration: .25s;
+}
+
+
 .about-me .frame {
   position: relative;
   background-color: #ffffff;
