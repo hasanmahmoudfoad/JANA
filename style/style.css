@@ -1,18 +1,3 @@
-:root {
-  --light-green: #96be07;
-  --light-cyan: #09b3b4;
-  --light-blue: #4fb7dc;
-  /* light */
-  --dark-navey: #101630;
-  /* main */
-  --dark-purple: #463fc2;
-  /* purple */
-  --shopify: #463fc2;
-  --white: #fff;
-  --basic: #16a53f;
-  --standard: #16a53f;
-  --prim: #16a53f;
-}
 
 * {
   padding: 0;
@@ -23,6 +8,7 @@
 body {
   background-color: var(--dark-navey);
   transition-duration: .5s;
+  
 }
 
 /* S T A R T    l o a d e r */
@@ -165,22 +151,6 @@ body {
   70%,
   90% {
     transform: translateX(-8px);
-  }
-}
-
-@keyframes glow-red {
-  50% {
-    border-color: rgb(238, 23, 23);
-  }
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 20px #fff, 0 0 10px var(--light-blue), 0 0 10px var(--dark-purple), 0 0 10px var(--light-blue), 0 0 10px var(--light-blue), 0 0 10px var(--light-blue), 0 0 10px var(--light-blue);
-  }
-
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 10px var(--light-blue), 0 0 10px var(--dark-purple), 0 0 10px var(--light-blue), 0 0 10px var(--light-blue), 0 0 5px var(--light-blue), 0 0 10px var(--light-blue);
   }
 }
 
@@ -420,14 +390,6 @@ nav li:hover {
 .about-me {
   padding: 15rem 0 20rem 0;
   overflow: hidden;
-}
-
-.about-me p {
-  font-size: 1.3rem;
-  font-weight: 600;
-  line-height: 2rem;
-  color: #ddd;
-  width: 90%;
 }
 
 .about-me .my-img-container {
@@ -1271,11 +1233,10 @@ p, label {
 
 
 /* START BOOTSTRAP SM SCREENS  */
+
 @media (max-width:767px) {
 
-  .about-me p {
-    width: 100%;
-  }
+  
 
   .big-btn {
     font-size: 1.1rem;
@@ -1352,12 +1313,6 @@ p, label {
 
   .intro h1 {
     font-size: 3rem !important;
-  }
-
-  .about-me p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    width: 100%;
   }
 
   .about-me {

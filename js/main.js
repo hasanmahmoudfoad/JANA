@@ -5,7 +5,7 @@
 //TRUE AND FALSE FUNCTIONS
 
 function colReverse() {
-  $("#about-me .col-rev").addClass("flex-column-reverse");
+  $("#home .col-rev").addClass("flex-column-reverse");
   console.log('added flex-column-reverse');
 };  
 
@@ -336,11 +336,12 @@ $(document).ready(function () {
     // START nav color scroll change
     /*
     if ($(this).scrollTop() > 30) {
-      $('nav').addClass('bg-light');
+      $('nav').css({"box-shadow ":"0px 1px 15px #eee"});
     } else {
-      $('nav').removeClass('bg-light');
+      $('nav').css({"box-shadow ":"none"});
     }
     */
+    
     // END nav color scroll change
     
     
