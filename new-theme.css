@@ -491,10 +491,6 @@ nav li:hover {
 }
 
 
-
-
-
-
 #projects .long-j-container .first-right{
   position: absolute;
   right: 10%;
@@ -843,23 +839,16 @@ transition-duration: .25s;
   #sponsorship .container-adjust {
     padding: .5rem;
   }
-
-  #footer .bord:nth-child(2){
-    border: none;
-  }
-  #footer .bord:nth-child(4){
-    border: none;
-  }
-
-.new-title {
+  
+  .new-title {
     width: 100%;
     padding: 2rem 0;
-
+    
 }
 .new-title h2 {
     font-size: 2rem;
     font-size: 1.8rem;
-}
+  }
 .tl-left {
   width: 50px;
 }
@@ -867,11 +856,104 @@ transition-duration: .25s;
   width: 50px;
 }
 
+
+
+
+
+#projects{
+  margin: 7rem 0;
+}
+#projects .scope-girl{
+display: none;
+  }
+
+#projects .long-j-container .long-j-img{
+  max-width: 350px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#projects .long-j-container {
+  height: 100rem;
+}
+
+
+#projects .long-j-container .first-right{
+  top: 2%;
+  right: unset;
+  left: 50%;
+  transform: translate(-50%, -2%);
+}
+
+
+#projects .long-j-container .first-left{
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+}
+
+
+#projects .long-j-container .second-right{
+  top: 65%;
+  right: unset;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+
+#projects .long-j-container .second-left{
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -98%);
+}
+
+
+#projects .long-j-container .project-holder{
+  padding: 1rem;
+  box-shadow: -15px 0px #0000001f;
+}
+
+#projects .long-j-container .img-container{
+  width: 200px;
+}
+
+#projects .img-container img{
+  opacity: 1;
+}
+#projects .long-j-container .project-info{
+  margin: 0.5rem 0;
+  border-radius: 2rem;
+  border: 3px solid var(--dark-purple);  
+}
+
+#projects .long-j-container .project-info p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
 .best-service .img-container {
   width: 100%;
 }
 
 
+
+  #footer .bord:nth-child(2){
+    border: none;
+  }
+  #footer .bord:nth-child(4){
+    border: none;
+  }
 
 }
 
@@ -967,6 +1049,94 @@ transition-duration: .25s;
   width: 70px;
 }
 
+
+
+#projects{
+  margin: 7rem 0;
+}
+
+#projects .scope-girl{
+  display: none;
+    }
+  
+  #projects .long-j-container .long-j-img{
+    max-width: 380px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  #projects .long-j-container {
+    height: 110rem;
+  }
+  
+  
+  #projects .long-j-container .first-right{
+    top: 2%;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -2%);
+  }
+  
+  
+  #projects .long-j-container .first-left{
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -33%);
+  }
+  
+  
+  #projects .long-j-container .second-right{
+    top: 65%;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+  
+  
+  #projects .long-j-container .second-left{
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -98%);
+  }
+  
+  
+  #projects .long-j-container .project-holder{
+    padding: 1rem;
+    box-shadow: -20px 0px #0000001f;
+  }
+  
+  #projects .long-j-container .img-container{
+    width: 230px;
+  }
+  
+  #projects .img-container img{
+    opacity: 1;
+  }
+  #projects .long-j-container .project-info{
+    margin: 1rem 0;
+    border-radius: 2rem;
+    border: 3px solid var(--dark-purple);  
+  }
+  
+  #projects .long-j-container .project-info p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
 .best-service .img-container {
   width: 100%;
 }
@@ -1006,6 +1176,38 @@ transition-duration: .25s;
   .centerlized {
     margin: 2rem 0;
   }
+
+  
+#projects{
+  margin: 7rem 0;
+}
+
+#projects .scope-girl{
+  display: none;
+    }
+  
+  #projects .long-j-container .project-holder{
+    padding: 1rem;
+    box-shadow: -20px 0px #0000001f;
+  }
+  
+  #projects .long-j-container .img-container{
+    width: 300px;
+  }
+  
+  #projects .img-container img{
+    opacity: 1;
+  }
+  #projects .long-j-container .project-info{
+    margin: 1rem 0;
+  }
+  
+  #projects .long-j-container .project-info p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  
 
   #sponsorship .basic .price-section .price {
     font-size: 2rem;
