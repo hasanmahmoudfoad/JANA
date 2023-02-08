@@ -1,3 +1,11 @@
+:root {
+  --light-blue: #6fa3c1;
+  --dark-navey: #ffffff;
+  --dark-purple: #ffc93f;
+  --basic: #e0843b;
+  --standard: #6fa3c1;
+  --premium: #87c16f;
+}
 
 * {
   padding: 0;
@@ -570,14 +578,6 @@ figure.effect-goliath:hover p {
   padding: 5rem;
 }
 
-#sponsorship .frame {
-  background-color: var(--dark-purple);
-  background-image: linear-gradient(315deg, var(--dark-purple) 15%, var(--light-blue) 85%);
-  box-shadow: 15px 5px 50px 0 var(--dark-purple), -15px -5px 50px 0 var(--light-blue);
-  border-radius: 3rem;
-  padding: 0.5rem;
-}
-
 
 #sponsorship .wrapper .table {
   background: #fff;
@@ -588,27 +588,14 @@ figure.effect-goliath:hover p {
 }
 
 
-#sponsorship .table .price-section {
+#sponsorship .price-section {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
 }
 
-#sponsorship .basic .price-section .price {
+#sponsorship .price-section .price {
   padding: 0.5rem;
-  color: var(--light-green);
-  font-size: 3rem;
-}
-
-#sponsorship .standard .price-section .price {
-  padding: 0.5rem;
-  color: var(--light-blue);
-  font-size: 3rem;
-}
-
-#sponsorship .Premium .price-section .price {
-  padding: 0.5rem;
-  color: var(--dark-purple);
   font-size: 3rem;
 }
 
@@ -620,54 +607,6 @@ figure.effect-goliath:hover p {
   align-items: center;
   justify-content: center;
   font-size: 1.7rem;
-}
-
-
-
-
-#sponsorship .price-section .price-area .inner-area {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  color: #fff;
-  line-height: 117px;
-  text-align: center;
-  position: relative;
-}
-
-#sponsorship .price-area .inner-area .text {
-  font-size: 25px;
-  font-weight: 400;
-  position: absolute;
-  top: -10px;
-  left: 17px;
-}
-
-#sponsorship .price-area .inner-area .price {
-  font-size: 55px;
-  font-weight: 500;
-}
-
-
-#sponsorship .table .package-name {
-  width: 100%;
-  height: 2px;
-  background: var(--light-blue);
-  margin: 35px 0;
-  position: relative;
-}
-
-#sponsorship .table .package-name::before {
-  position: absolute;
-  content: "Basic";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  font-size: 25px;
-  padding: 0 10px;
-  font-weight: bolder;
 }
 
 #sponsorship .table .features li {
@@ -708,82 +647,63 @@ figure.effect-goliath:hover p {
 
 #sponsorship .basic .price-area,
 #sponsorship .basic .inner-area {
-  background: var(--light-green);
+  background: var(--basic);
 }
 
 
 #sponsorship .standard .price-area,
 #sponsorship .standard .inner-area {
-  background: var(--light-blue);
+  background: var(--standard);
 }
 
-#sponsorship .Premium .price-area,
-#sponsorship .Premium .inner-area {
-  background: var(--dark-purple);
+#sponsorship .premium .price-area,
+#sponsorship .premium .inner-area {
+  background: var(--premium);
 }
 
 #sponsorship .basic .plan-color {
-  color: var(--light-green);
+  color: var(--basic);
 }
 
 #sponsorship .standard .plan-color {
-  color: var(--light-blue);
+  color: var(--standard);
 }
 
 #sponsorship .Premium .plan-color {
-  color: var(--dark-purple);
+  color: var(--premium);
 }
 
 #sponsorship .basic .package-name {
-  background: var(--light-green);
+  background: var(--basic);
 }
 
 
 #sponsorship .standard .package-name {
-  background: var(--light-blue);
+  background: var(--standard);
 }
 
 #sponsorship .Premium .package-name {
-  background: var(--dark-purple);
+  background: var(--premium);
 }
 
-
-
-
-
-
-
-
-#sponsorship .basic .package-name::before {
-  content: "Basic";
-}
-
-
-#sponsorship .standard .package-name::before {
-  content: "Standard";
-}
-
-#sponsorship .Premium .package-name::before {
-  content: "Premium";
-}
 
 .basic ::selection,
 .basic .price-area,
 .basic .inner-area {
-  background: var(--light-green);
+  background: var(--basic);
 }
 
 
 .standard ::selection,
 .standard .price-area,
 .standard .inner-area {
-  background: var(--light-blue);
+  background: var(--standard);
 }
 
-#sponsorship .Premium ::selection,
-#sponsorship .Premium .price-area,
-#sponsorship .Premium .inner-area {
-  background: var(--dark-purple);
+#sponsorship .premium ::selection,
+#sponsorship .premium .price-area,
+#sponsorship .premium .inner-area {
+  background: var(--premium);
 }
 
 
@@ -829,7 +749,7 @@ figure.effect-goliath:hover p {
 }
 
 .video-section {
-  padding-top: 10rem;
+  padding-top: 20rem;
 }
 
 /*  GALLARY */
@@ -866,7 +786,7 @@ figure.effect-goliath:hover p {
   animation-name: shake, glow-red;
   animation-duration: 0.7s, 0.35s;
   animation-iteration-count: 1, 2; 
-  border: 2px solid red;
+  border: 2px solid red !important;
 }
 
 
