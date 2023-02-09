@@ -336,7 +336,7 @@ li.diff {
   display: block;
   float: left;
   text-align: center;
-  width: 20%;
+  width: 25%;
   height: 100%;
   transition: all ease-in-out .2s;
 }
@@ -733,15 +733,14 @@ figure.effect-goliath:hover p {
 /*  GALLARY */
 
 .gallary {
-  padding-top: 10rem;
+  padding-top: 20rem;
 }
 
 .gallary .img-container {
-  background-color: var(--dark-purple);
-  background-image: linear-gradient(315deg, var(--dark-purple) 15%, var(--light-blue) 85%);
-  box-shadow: 15px 5px 50px 0 var(--dark-purple), -15px -5px 50px 0 var(--light-blue);
-  border-radius: 2rem;
+  box-shadow: 5px 5px 15px;
+  border-radius: 4rem;
   overflow: hidden;
+  border: 3px solid #000;
 }
 
 .gallary .img-container img {

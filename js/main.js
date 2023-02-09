@@ -305,7 +305,7 @@ $(document).ready(function () {
   });
   /**** Pc nav ****/
   
-  
+   
   /***  Mobile nav ***/
   $(' navbar li a').click(function () {
     $('html , body').animate({

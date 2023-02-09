@@ -431,7 +431,7 @@ nav li:hover {
 }
 .new-title {
   width: 70%;
-  margin: 3rem auto;
+  margin: auto;
     padding: 5rem 0;
 }
 .new-title h2{
@@ -816,6 +816,10 @@ color: var(--premium);
 
 
 nav li .active {
+  color: var(--light-blue) !important;
+}
+
+.active-static {
   color: var(--light-blue) !important;
 }
 
