@@ -41,6 +41,7 @@
 
     <section class="whole-page ">
 
+
         <div id="go-top">
             <div class="relative-div">
                 <img src="./images/rounded-button.png">
@@ -156,8 +157,8 @@
                                         d="M125.28,185.25a6.1,6.1,0,0,1-6.09-6.1V125.28a6.1,6.1,0,0,1,12.19,0v53.87A6.1,6.1,0,0,1,125.28,185.25Z" />
                                     <path
                                         d="M125.28,248.94a6.09,6.09,0,0,1-6.09-6.09v-1.53a6.1,6.1,0,1,1,12.19,0v1.53A6.1,6.1,0,0,1,125.28,248.94Z" />
-                                </svg></span><a href="./index.html#about-me" data-scrolling="about-me">About</a></li>
- -->
+                                </svg></span><a href="./index.html#about-me" data-scrolling="about-me">About</a></li> -->
+
 
                         <li class="diff"><span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 263.28 236.47">
@@ -231,7 +232,7 @@
                                 <!-- <li class="different"><a href="./index.html#about-me" class="" data-scrolling="about-me">About</a></li> -->
                                 <li class="different"><a href="./index.html#projects" class="" data-scrolling="min-projects">Projects</a>
                                 </li>
-                                <li class="different"><a href="./offers.html" class="active-static" data-scrolling="pricingHandler">Offers</a>
+                                <li class="different"><a href="./offers.html" data-scrolling="sponsership">Offers</a>
                                 </li>
                                 <li class="different"><a href="#" class="" data-scrolling="footer">Contact</a></li>
                             </ul>
@@ -242,114 +243,319 @@
             </nav>
         </div>
 
-
-        <div class="container pass-auth font-poppins">
-            <div class="row">
-                <div class="col-12 p-0 relative-div">
-                    <div class="auth-form">
-                        <div class="form-group">
-                            <label class="py-3" for="pricing">Password</label>
-                            <div>
-                                <input id="passwordInput" type="password" class="form-control "
-                                    placeholder="Enter Password">
-                                <div class=" toggle-pass-div">
-                                    <input type="checkbox" id="togglePassword"><span class="px-2 "> Show
-                                        Password</span>
-                                </div>
+        <section id="sponsorship" class="sponsorship pv-md">
+            <div class="container-adjust container-fluid">
+<div class="custom-package container">
+    <div class="new-title w-100 relative-div">
+        <div class="tl-left"></div>
+        <h2>Customizable package</h2>
+        <div class="tl-right"></div>
+    </div>
+    <div class="client-info">
+        <h4 class="my-5">Fill the fields please:</h4>
+        <div class=" custom-package ">
+            <form>
+                <div class="row form-container">
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class=" custom-package "> <label for="time-pk">Time In Minutes
+                                    : </label><br><input type="number" name="time" value=""
+                                    id="timePk" class="form-control" required> </div>
+                            <div class="custom-package "> <label for="logos-pk">Logos :
+                                </label><br><input type="number" value="" id="logosPk"
+                                    class="form-control" required> </div>
+                            <div class=" custom-package "> <label for="spots-pk">Spots :
+                                </label><br><input type="number" value="" id="spotsPk"
+                                    class="form-control" required> </div>
+                            <div class="custom-package "> <label for="logo-screen-pk">Logo
+                                    screen Masaa Masr studio : </label><br><input type="text"
+                                    value="" id="logoScreenPk" class="form-control" required>
                             </div>
                         </div>
-                        <a id="getPrices" class="y-btn">
-                            <img src="./images/long-button.png">
-                            <span class="font-poppins">Show Offers</span>
-                            </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="projectsPk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2"> Coverage & review
+                                    projects.</span>
+                                <div id="selectProjects" class="dropdown-list hidden-options">
+                                    <h4 class="cpk-info">Please select how many projects to
+                                        review and cover. </h4> <select id="numberOfProjects"
+                                        name="project-selector" class="form-control num-picker">
+                                        <option class="option"> One </option>
+                                        <option class="option"> Two </option>
+                                        <option class="option"> Three </option>
+                                        <option class="option"> Four </option>
+                                        <option class="option"> Five </option>
+                                        <option class="option"> Unlimited </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="interviewsPk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2"> Interviews.</span>
+                                <div id="selectProjectsInterviews"
+                                    class="dropdown-list hidden-options">
+                                    <h4 class="cpk-info">Please select how many Interviews to
+                                        cover. </h4> <select id="numberOfInterviews"
+                                        name="interviews-selector"
+                                        class="form-control num-picker">
+                                        <option class="option"> One </option>
+                                        <option class="option"> Two </option>
+                                        <option class="option"> Three </option>
+                                        <option class="option"> Four </option>
+                                        <option class="option"> Five </option>
+                                        <option class="option"> Unlimited </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="eventsPk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2"> Coverage
+                                    events.</span>
+                                <div id="selectEvents" class="dropdown-list hidden-options">
+                                    <h4 class="cpk-info">Please select how many Events to cover.
+                                    </h4> <select id="numberOfEvents" name="events-selector"
+                                        class="form-control num-picker">
+                                        <option class="option"> One </option>
+                                        <option class="option"> Two </option>
+                                        <option class="option"> Three </option>
+                                        <option class="option"> Four </option>
+                                        <option class="option"> Five </option>
+                                        <option class="option"> Unlimited </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="reportagePk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2"> Segment
+                                    Reportage.</span>
+                                <div id="selectReportage" class="dropdown-list hidden-options">
+                                    <h4 class="cpk-info">Please select how many segment
+                                        reportage to cover. </h4> <select id="numberOfReportage"
+                                        name="Reportage-selector"
+                                        class="form-control num-picker">
+                                        <option class="option"> One </option>
+                                        <option class="option"> Two </option>
+                                        <option class="option"> Three </option>
+                                        <option class="option"> Four </option>
+                                        <option class="option"> Five </option>
+                                        <option class="option"> Unlimited </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="newsPk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2">News.</span>
+                                <div id="selectNews" class="dropdown-list hidden-options">
+                                    <h4 class="cpk-info">Please select how many News to cover.
+                                    </h4> <select id="numberOfNews" name="news-selector"
+                                        class="form-control num-picker">
+                                        <option class="option"> One </option>
+                                        <option class="option"> Two </option>
+                                        <option class="option"> Three </option>
+                                        <option class="option"> Four </option>
+                                        <option class="option"> Five </option>
+                                        <option class="option"> Unlimited </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="insideStudioPk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2">Company or project
+                                    logo inside the studio.</span>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input id="outdoorStudioPk"
+                                        type="checkbox" class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2">Company or project
+                                    logo outdoor campaign the studio.</span>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input
+                                        id="sponsorshipEventsPk" type="checkbox"
+                                        class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2">Sponsorship masaa
+                                    masr events.</span>
+                            </div>
+                            <div class="custom-package">
+                                <div class="checkbox-wrapper mx-2"> <input
+                                        id="sponsorshipSocialMediaPk" type="checkbox"
+                                        class="form-control check-box" /> <svg
+                                        viewBox="0 0 35.6 35.6">
+                                        <circle class="background" cx="17.8" cy="17.8" r="17.8">
+                                        </circle>
+                                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37">
+                                        </circle>
+                                        <polyline class="check"
+                                            points="11.78 18.12 15.55 22.23 25.17 12.87">
+                                        </polyline>
+                                    </svg> </div><span class="cpk-info ml-2">Sponsorship Masaa
+                                    Masr social media.</span>
+                            </div>
                         </div>
+                    </div>
+<!--                     
+                    <div class="form-group"> <input type="button" name="submit"
+                            class="btnSubmit btn-block big-btn" onclick="goToWhatsapp()"
+                            value="Submit" /> 
+                        </div> -->
+
+                            <a href="#" class="y-btn" onclick="goToWhatsapp()"><img src="./images/button-border.png"><span
+                                class="font-poppins">Projects</span></a>
+
+
                 </div>
-            </div>
+            </form>
         </div>
-
-
-        <div id="pricingHandler"></div>
-
-<div class="container pricing-img">
-    <div class="img-container">
-        <img class="w-100" src="./images/pricing-vector.png">
     </div>
-    <div class="footer-pre-line"></div>
-
 </div>
 
+</div>
+</section>
 
-        <section id="footer" class="py-5">
-            <div class="container">
-                <div class="new-title relative-div">
-                    <div class="tl-left"></div>
-                    <h2>Contact Me</h2>
-                    <div class="tl-right"></div>
+
+
+<section id="footer" class="py-5">
+    <div class="container">
+        <div class="new-title relative-div">
+            <div class="tl-left"></div>
+            <h2>Contact Me</h2>
+            <div class="tl-right"></div>
+        </div>
+        <div class="row icons-container">
+
+
+            <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
+                <div class="icon-cont">
+                    <a href="tel:+201288009558"><i class="fa-solid fa-phone icon"
+                            style="font-size: 2rem;"></i></a>
                 </div>
-                <div class="row icons-container">
+            </div>
 
-
-                    <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
-                        <div class="icon-cont">
-                            <a href="tel:+201288009558"><i class="fa-solid fa-phone icon"
-                                    style="font-size: 2rem;"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
-                        <div class=" icon-cont">
-                            <a href="https://wa.me/201288009558" target="_blank"><i
-                                    class="fa-brands fa-whatsapp icon "></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
-                        <div class=" icon-cont">
-                            <a href="https://twitter.com/janamatarawyeg" target="_blank"><i
-                                    class="fa-brands fa-twitter icon "></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
-                        <div class="icon-cont">
-                            <a href="https://www.instagram.com/janamatarawyeg/" target="_blank"><i
-                                    class=" fa-brands fa-instagram icon "></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
-                        <div class="icon-cont">
-                            <a href="https://www.facebook.com/janamatarawyeg" target="_blank"> <i
-                                    class="fa-brands fa-facebook-f icon "></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-2 d-flex justify-content-center my-3">
-                        <div class="icon-cont">
-                            <a href="https://mail.google.com/mail/u/" target="_blank"><i
-                                    class=" fa-regular fa-envelope icon "></i></a>
-                        </div>
-                    </div>
-
-
+            <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
+                <div class=" icon-cont">
+                    <a href="https://wa.me/201288009558" target="_blank"><i
+                            class="fa-brands fa-whatsapp icon "></i></a>
                 </div>
-        </section>
+            </div>
+
+            <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
+                <div class=" icon-cont">
+                    <a href="https://twitter.com/janamatarawyeg" target="_blank"><i
+                            class="fa-brands fa-twitter icon "></i></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
+                <div class="icon-cont">
+                    <a href="https://www.instagram.com/janamatarawyeg/" target="_blank"><i
+                            class=" fa-brands fa-instagram icon "></i></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 d-flex justify-content-center bord my-3">
+                <div class="icon-cont">
+                    <a href="https://www.facebook.com/janamatarawyeg" target="_blank"> <i
+                            class="fa-brands fa-facebook-f icon "></i></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 d-flex justify-content-center my-3">
+                <div class="icon-cont">
+                    <a href="https://mail.google.com/mail/u/" target="_blank"><i
+                            class=" fa-regular fa-envelope icon "></i></a>
+                </div>
+            </div>
+
+
+        </div>
+</section>
+
+
+</section> <!-- END whole-page SECTION -->
 
 
 
-
-    </section> <!-- END whole-page SECTION -->
-
-
-
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/popper.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/all.min.js"></script>
-    <script src="./js/jquery.enllax.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/custom-packge.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/all.min.js"></script>
+<script src="./js/jquery.enllax.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/custom-packge.js"></script>
 
 </body>
 
